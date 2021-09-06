@@ -326,8 +326,14 @@
                 </div>
             </button>
         </form>
-        <p v-if="signUp"  class="text-center mt-2 text-yellow-400">By creating a account you are agreeing to the warnings specified at 
-        <router-link class="text-green-300 dark:text-indigo-400 hover:underline" :to="{ name: 'About' }">the about page</router-link>.</p>
+        <p v-if="signUp" class="text-center mt-2 text-yellow-400">
+            By creating a account you are agreeing to the warnings specified at
+            <router-link
+                class="text-green-300 dark:text-indigo-400 hover:underline"
+                :to="{ name: 'About' }"
+                >the about page</router-link
+            >.
+        </p>
         <a
             href="#"
             v-if="!signUp"
@@ -342,7 +348,7 @@
         >
             Forgot your password?
         </a>
-        <router-link    
+        <router-link
             v-if="!signUp"
             :to="{ name: 'SignUp' }"
             class="

@@ -199,7 +199,8 @@
                 <p class="text-lg mt-2">
                     Here, you can create & manage lists (e.g.
                     <i>groceries for dinner</i>), save notes and get
-                    notifications at specified time (hopefully in the future) for said list.
+                    notifications at specified time (hopefully in the future)
+                    for said list.
                     <br />
                     PS: Your lists are stored on the server, meaning you can
                     access your tasks from any modern browser by just signing

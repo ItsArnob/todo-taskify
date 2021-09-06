@@ -1,5 +1,5 @@
 <template>
-<div
+    <div
         class="
             mt-7
             transition
@@ -16,6 +16,6 @@
             flex flex-col
         "
     >
-        <p> i dont know what to write here yet </p>
+        <p>i dont know what to write here yet</p>
     </div>
 </template>
