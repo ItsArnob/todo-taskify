@@ -203,6 +203,7 @@
                     'border-opacity-70 border-rose-400': passInputHasFocus,
                 }"
             >
+                <div class="flex">
                 <input
                     id="password"
                     :type="showPassword ? 'text' : 'password'"
@@ -215,8 +216,7 @@
                         duration-200
                         bg-transparent
                         peer
-                        h-9
-                        w-[30.2rem]
+                        h-9 w-full
                         placeholder-transparent
                         outline-none
                     "
@@ -224,7 +224,7 @@
                 />
                 <button
                     type="button"
-                    class="absolute right-0 top-2"
+                    class="ml-1"
                     @click="showPassword = !showPassword"
                 >
                     <EyeOffIcon
@@ -236,6 +236,7 @@
                         class="w-5 text-gray-400 dark:text-gray-500"
                     />
                 </button>
+                </div>
                 <label
                     for="password"
                     class="
