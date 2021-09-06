@@ -10,8 +10,8 @@
             py-4
             px-6
             border-2
-            dark:border-gray-700 dark:border-opacity-50
-            border-opacity-20
+            dark:border-gray-700 dark:border-opacity-70
+            border-opacity-40
             backdrop-filter backdrop-blur-[6px]
             flex flex-col
             dark:text-gray-300

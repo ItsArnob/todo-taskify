@@ -10,9 +10,9 @@
             rounded-lg
             transition-color
             duration-200
-            border-[1.5px]
-            dark:border-[1.5px] dark:border-gray-600 dark:border-opacity-30
-            border-opacity-30
+            border-[1.5px] border-gray-200
+            dark:border-gray-700 dark:border-opacity-70
+            border-opacity-40
             p-4
         "
         @click="openList"

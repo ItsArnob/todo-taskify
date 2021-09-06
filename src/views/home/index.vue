@@ -74,8 +74,8 @@
                     py-4
                     px-6
                     border-2
-                    dark:border-gray-700 dark:border-opacity-50
-                    border-opacity-20
+                    dark:border-gray-700 dark:border-opacity-70
+                    border-opacity-40
                     backdrop-filter backdrop-blur-[6px]
                     flex flex-col
                     dark:text-gray-300
@@ -178,8 +178,8 @@
                     py-4
                     px-6
                     border-2
-                    dark:border-gray-700 dark:border-opacity-50
-                    border-opacity-20
+                    dark:border-gray-700 dark:border-opacity-70
+                    border-opacity-40
                     backdrop-filter backdrop-blur-[6px]
                     flex flex-col
                     dark:text-gray-300
@@ -196,17 +196,8 @@
                     meaning it has to do one job and only that, no additional
                     features.
                 </p>
-                <p class="text-lg mt-2">
-                    Here, you can create & manage lists (e.g.
-                    <i>groceries for dinner</i>), save notes and get
-                    notifications at specified time (hopefully in the future)
-                    for said list.
-                    <br />
-                    PS: Your lists are stored on the server, meaning you can
-                    access your tasks from any modern browser by just signing
-                    into your account (◠‿◕)
-                </p>
-                <div class="text-lg mt-2 flex">
+                <router-link :to="{ name: 'About' }" class="text-green-300 dark:text-indigo-400 hover:underline">Learn more.</router-link>
+                <div class="text-lg mt-4 flex">
                     <router-link
                         :to="{ name: 'SignUp' }"
                         class="

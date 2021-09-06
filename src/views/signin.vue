@@ -10,8 +10,8 @@
             py-4
             px-6
             border-2
-            dark:border-gray-700 dark:border-opacity-50
-            border-opacity-20
+            dark:border-gray-700 dark:border-opacity-70
+            border-opacity-40
             backdrop-filter backdrop-blur-[6px]
             flex flex-col
         "
@@ -204,68 +204,66 @@
                 }"
             >
                 <span class="flex">
-                    <input
-                        id="password"
-                        :type="showPassword ? 'text' : 'password'"
-                        name="password"
-                        v-model="formData.password"
-                        @focus="passInputHasFocus = true"
-                        @blur="passInputHasFocus = false"
-                        class="
-                            transition-color
-                            duration-200
-                            bg-transparent
-                            peer
-                            h-9
-                            w-full
-                            placeholder-transparent
-                            outline-none
-                        "
-                        placeholder="Password"
+                <input
+                    id="password"
+                    :type="showPassword ? 'text' : 'password'"
+                    name="password"
+                    v-model="formData.password"
+                    @focus="passInputHasFocus = true"
+                    @blur="passInputHasFocus = false"
+                    class="
+                        transition-color
+                        duration-200
+                        bg-transparent
+                        peer
+                        h-9 w-full
+                        placeholder-transparent
+                        outline-none
+                    "
+                    placeholder="Password"
+                />
+                <button
+                    type="button"
+                    class="ml-1"
+                    @click="showPassword = !showPassword"
+                >
+                    <EyeOffIcon
+                        v-if="showPassword"
+                        class="w-5 text-gray-400 dark:text-gray-500"
                     />
-                    <button
-                        type="button"
-                        class="ml-1"
-                        @click="showPassword = !showPassword"
+                    <EyeIcon
+                        v-else
+                        class="w-5 text-gray-400 dark:text-gray-500"
+                    />
+                </button>
+               
+                <label
+                    for="password"
+                    class="
+                        absolute
+                        left-0
+                        -top-3.5
+                        text-gray-300
+                        dark:text-gray-400
+                        text-sm
+                        transition-all
+                        peer-placeholder-shown:text-base
+                        peer-placeholder-shown:text-gray-300
+                        peer-placeholder-shown:text-opacity-80
+                        peer-placeholder-shown:top-2
+                        peer-focus:-top-3.5 peer-focus:text-gray-300
+                        dark:peer-focus:text-gray-400
+                        peer-focus:text-sm
+                    "
+                    >Password
+                    <span
+                        v-show="error.password"
+                        :class="{
+                            ' text-rose-400 dark:text-red-500': error.password,
+                        }"
+                        >({{ error.password }})</span
                     >
-                        <EyeOffIcon
-                            v-if="showPassword"
-                            class="w-5 text-gray-400 dark:text-gray-500"
-                        />
-                        <EyeIcon
-                            v-else
-                            class="w-5 text-gray-400 dark:text-gray-500"
-                        />
-                    </button>
-
-                    <label
-                        for="password"
-                        class="
-                            absolute
-                            left-0
-                            -top-3.5
-                            text-gray-300
-                            dark:text-gray-400
-                            text-sm
-                            transition-all
-                            peer-placeholder-shown:text-base
-                            peer-placeholder-shown:text-gray-300
-                            peer-placeholder-shown:text-opacity-80
-                            peer-placeholder-shown:top-2
-                            peer-focus:-top-3.5 peer-focus:text-gray-300
-                            dark:peer-focus:text-gray-400
-                            peer-focus:text-sm
-                        "
-                        >Password
-                        <span
-                            v-show="error.password"
-                            :class="{
-                                ' text-rose-400 dark:text-red-500':
-                                    error.password,
-                            }"
-                            >({{ error.password }})</span
-                        >
-                    </label>
+                </label>
                 </span>
             </div>
             <button

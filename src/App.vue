@@ -6,8 +6,8 @@
                 duration-200
                 shadow-nav
                 bg-black bg-opacity-30
-                dark:border dark:border-gray-700 dark:border-opacity-50
-                border border-opacity-20
+                dark:border dark:border-gray-700 dark:border-opacity-100
+                border border-opacity-40
                 backdrop-filter backdrop-blur-[6px]
                 mt-8
                 p-2
