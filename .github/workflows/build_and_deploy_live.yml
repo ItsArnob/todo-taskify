@@ -1,6 +1,10 @@
 name: Build and Deploy Main
 on:
   push:
+    paths-ignore:
+      - README.md
+      - .*
+
     branches:
       - main
 
