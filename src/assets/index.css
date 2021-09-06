@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html {
+        font-size: 16px;
+    }
+}
+@layer utilities {
+    .bg-body {
+        background: url("/bg.jpg") no-repeat fixed;
+        background-size: cover;
+        transition: background-image 0.1s ease-in-out;
+    }
+    .bg-body-dark {
+        background: url("/bg_dark.jpg") no-repeat fixed;
+        background-size: cover;
+        transition: background-image 0.1s ease-in-out;
+    }
+    .nav-link {
+        @apply transition duration-200 ease-in-out font-medium text-gray-300 hover:shadow-link hover:text-white;
+    }
+    .nav-2-a {
+        @apply border-2 px-2 rounded-full;
+    }
+    .no-highlight {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+    }
+    .theme-btn-bg {
+        background: url("/sun.svg");
+        @apply bg-purple-300 bg-opacity-40;
+    }
+    .theme-btn-bg-enable {
+        background: url("/moon.svg");
+        @apply bg-purple-500;
+    }
+    .active-exact-active {
+        @apply bg-blue-500 text-blue-200 ring ring-opacity-70 ring-blue-700 dark:ring-opacity-90;
+        /*border-blue-300 bg-opacity-50 bg-blue-600 text-blue-300 */
+    }
+    .done-exact-active {
+        @apply bg-pink-500 bg-opacity-80 text-pink-200 ring ring-opacity-70 dark:ring-opacity-60 ring-pink-400
+    /*border-pink-400 bg-pink-600 bg-opacity-60 text-pink-300*/;
+    }
+    .create-exact-active {
+        @apply bg-green-500 bg-opacity-90 text-green-100 ring ring-green-600 ring-opacity-80;
+        /*border-green-400 bg-green-500 bg-opacity-70 text-green-300*/
+    }
+}
