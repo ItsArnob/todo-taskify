@@ -102,7 +102,7 @@
             from
             <a
                 class="hover:underline text-green-300 dark:text-indigo-400"
-                href="https://flaticon.cpm"
+                href="https://flaticon.com"
                 target="_blank"
                 >flaticon</a
             >
