@@ -92,7 +92,7 @@
                             outline-none
                             focus:border-opacity-70 focus:border-rose-400
                         "
-                        placeholder="List name"
+                        placeholder="Item name"
                     />
 
                     <label
@@ -112,7 +112,7 @@
                             peer-focus:text-sm
                         "
                     >
-                        List name
+                        Item name
                         <span
                             v-show="error.name"
                             :class="{
